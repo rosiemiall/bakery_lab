@@ -1,8 +1,13 @@
-const Cake = ({name, ingredients, price, rating}) => {
+const Cake = ({name, ingredients, price, rating, onButtonClick, earnings}) => {
     // const array = []
     // ingredients.forEach(element => {
     //     array.push(element)
     // });
+
+    const buyCake = () => {
+        onButtonClick(earnings + price);
+    }
+
 
     return ( 
         <>
@@ -18,6 +23,7 @@ const Cake = ({name, ingredients, price, rating}) => {
 
         <p>Price: {price} </p>
         <p>Rating: {rating}</p>
+        <button onClick={buyCake}>Sell Cake</button>
         </>
 
      );

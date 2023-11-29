@@ -9,6 +9,8 @@ const BakeryContainer = () => {
     const [vicRating] = useState(5);
     const [teaRating] = useState(3);
     const [carrotRating] = useState(5);
+    const [totalEarnt, setTotalEarnt] = useState(0);
+    const earnings = totalEarnt;
 
     return ( 
         <>
@@ -25,6 +27,8 @@ const BakeryContainer = () => {
                     ]}
                     price = {5}
                     rating = {vicRating}
+                    onButtonClick={setTotalEarnt}
+                    earnings={earnings}
                 />
                 <Cake 
                     name={"Tea Loaf"}
@@ -38,6 +42,8 @@ const BakeryContainer = () => {
                     ]}
                     price = {2}
                     rating = {teaRating}
+                    onButtonClick={setTotalEarnt}
+                    earnings={earnings}
                 />
                 <Cake 
                     name={"Carrot Cake"}
@@ -51,8 +57,11 @@ const BakeryContainer = () => {
                        ]}
                     price = {8}
                     rating = {carrotRating}
+                    onButtonClick={setTotalEarnt}
+                    earnings={earnings}
                 />
                 <p>Average Rating: {(vicRating + teaRating + carrotRating)/3}</p>
+                <p>Total Earnt: {totalEarnt}</p>
         </>
      );
 }
