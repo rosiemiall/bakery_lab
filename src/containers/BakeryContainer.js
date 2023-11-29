@@ -2,11 +2,13 @@ import {useState} from 'react';
 import Cake from '../components/Cake';
 
 const BakeryContainer = () => {
-    const [vicSponge, setVicSponge] = useState({
-        // cake info
-    })
+    // const [vicSponge, setVicSponge] = useState({
+    //     // cake info
+    // })
 
-
+    const [vicRating] = useState(5);
+    const [teaRating] = useState(3);
+    const [carrotRating] = useState(5);
 
     return ( 
         <>
@@ -22,7 +24,7 @@ const BakeryContainer = () => {
                        "milk"
                     ]}
                     price = {5}
-                    rating = {5}
+                    rating = {vicRating}
                 />
                 <Cake 
                     name={"Tea Loaf"}
@@ -34,8 +36,8 @@ const BakeryContainer = () => {
                        "self-raising flour",
                        "strong tea",
                     ]}
-                    price = {5}
-                    rating = {5}
+                    price = {2}
+                    rating = {teaRating}
                 />
                 <Cake 
                     name={"Carrot Cake"}
@@ -47,10 +49,10 @@ const BakeryContainer = () => {
                           "flour",
                           "sugar",
                        ]}
-                    price = {5}
-                    rating = {5}
+                    price = {8}
+                    rating = {carrotRating}
                 />
-                <p>Average Rating: {}</p>
+                <p>Average Rating: {(vicRating + teaRating + carrotRating)/3}</p>
         </>
      );
 }
