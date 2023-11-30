@@ -11,6 +11,13 @@
 .cakes {
   display: flex;
   justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#box{
+  background-color: lightblue;
+  border-style: dotted;
+  border-color: pink;
 }
 
 
