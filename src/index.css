@@ -1,12 +1,15 @@
 #title {
-  color : purple;
+  color : lightblue;
   text-align: center;
 }
 #button {
   background-color : pink;
+  border-color: pink;
+  border-radius: 25px;
+  margin-left: 40px;
 }
 #names {
-  color : purple;
+  color : blanchedalmond;
   text-align: center;
 }
 
@@ -25,6 +28,8 @@
 .para{
   background-color: pink;
   border-radius: 25px;
+  border-style: dotted;
+  border-color: lightblue;
   text-align: center;
   margin-left: 300px;
   margin-right: 300px;
