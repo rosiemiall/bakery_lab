@@ -13,7 +13,7 @@ const BakeryContainer = () => {
       "milk",
     ],
     price: 5,
-    rating: 5,
+    rating: 4,
   });
 
   const [teaLoaf] = useState({
@@ -49,11 +49,11 @@ const BakeryContainer = () => {
   return (
     <>
       <h1 id="title">Cakes!</h1>
-      <p>
+      <p className="para">
         Average Rating:{" "}
         {(vicSponge.rating + teaLoaf.rating + carrotCake.rating) / 3}
       </p>
-      <p>Total Earnt: £{totalEarnt}</p>
+      <p className="para">Total Earnt: £{totalEarnt}</p>
       <section className="cakes">
         <Cake
           cake={vicSponge}

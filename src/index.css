@@ -1,11 +1,13 @@
 #title {
-  color : pink;
+  color : purple;
+  text-align: center;
 }
 #button {
   background-color : pink;
 }
 #names {
   color : purple;
+  text-align: center;
 }
 
 .cakes {
@@ -18,11 +20,20 @@
   background-color: lightblue;
   border-style: dotted;
   border-color: pink;
+  border-radius: 25px;
+}
+.para{
+  background-color: pink;
+  border-radius: 25px;
+  text-align: center;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
 
 
 body {
+  background-color: blanchedalmond;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
